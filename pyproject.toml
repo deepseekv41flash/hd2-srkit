@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "srkit"
+version = "0.1.0"
+description = "Standalone unpacker/packer for Stingray engine resources (Helldivers 2), stdlib only"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "deepseekv41flash" }]
+keywords = ["stingray", "helldivers2", "resources", "unpacker", "packer", "modding"]
+
+[project.scripts]
+srkit = "srkit.cli:main"
+
+[project.urls]
+Notes = "https://github.com/deepseekv41flash/hd2-25988413"
+
+[tool.setuptools]
+packages = ["srkit", "srkit.container", "srkit.resources", "srkit.util"]
